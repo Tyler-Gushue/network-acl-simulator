@@ -1,0 +1,8 @@
+access-list 105 permit tcp 192.168.10.0  0.0.0.255  192.168.30.20  0.0.0.0  eq 20
+access-list 105 permit tcp 192.168.10.0  0.0.0.255  192.168.30.20  0.0.0.0  eq 21
+access-list 105 deny ip 192.168.10.0  0.0.0.255  192.168.30.20  0.0.0.0
+access-list 105 permit tcp 192.168.20.0  0.0.0.255  192.168.30.30  0.0.0.0  eq 25
+access-list 105 deny ip 192.168.20.0  0.0.0.255  192.168.30.30  0.0.0.0
+access-list 105 permit ip any any
+interface E0
+ip access-group 105 in
