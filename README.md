@@ -30,15 +30,25 @@ This project models network traffic evaluation against configured access-list ru
 
 ```text
 network-acl-simulator/
+├── .gitignore                # Git ignore rules for compiled binaries and tooling
+├── README.md                 # Project documentation
 ├── ExtendedACLMain.java      # Driver program for Extended ACL simulation
-├── StandardACLMain.java      # Driver program for Standard ACL simulation
 ├── ExtendedRule.java         # Data model and matching logic for Extended ACL rules
-├── StandardRule.java         # Data model and matching logic for Standard ACL rules
 ├── Packet.java               # Packet representation (source IP, destination IP, port)
-├── extended_rules.txt        # Extended ACL rule configurations
-├── extended_input.txt        # Extended test packet streams
-├── standard_rules.txt        # Standard ACL rule configurations
-└── standard_input.txt        # Standard test packet streams
+├── StandardACLMain.java      # Driver program for Standard ACL simulation
+├── StandardRule.java         # Data model and matching logic for Standard ACL rules
+├── extended_input.txt        # Extended test packet stream (Test case 1)
+├── extended_input2.txt       # Extended test packet stream (Test case 2)
+├── extended_input3.txt       # Extended test packet stream (Test case 3)
+├── extended_rules.txt        # Extended ACL rule configurations (Test case 1)
+├── extended_rules2.txt       # Extended ACL rule configurations (Test case 2)
+├── extended_rules3.txt       # Extended ACL rule configurations (Test case 3)
+├── standard_input.txt        # Standard test packet stream (Test case 1)
+├── standard_input2.txt       # Standard test packet stream (Test case 2)
+├── standard_input3.txt       # Standard test packet stream (Test case 3)
+├── standard_rules.txt        # Standard ACL rule configurations (Test case 1)
+├── standard_rules2.txt       # Standard ACL rule configurations (Test case 2)
+└── standard_rules3.txt       # Standard ACL rule configurations (Test case 3)
 ```
 
 ---
